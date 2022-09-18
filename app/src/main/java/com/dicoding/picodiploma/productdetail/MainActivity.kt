@@ -42,8 +42,8 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun setupData() {
-        val data = RemoteDataSource(this)
-        val product = data.getDetailProduct().apply {
+        val repository = RemoteDataSource(this)
+        val product = repository.getDetailProduct().apply {
             binding.apply {
                 previewImageView.setImageResource(image)
                 nameTextView.text = name
@@ -51,11 +51,9 @@ class MainActivity : AppCompatActivity() {
                 colorTextView.text = color
                 sizeTextView.text = size
                 descTextView.text = desc
-                priceTextView.text = price
-                dateTextView.text = getString(R.string.dateFormat, date)
-                ratingTextView.text = getString(R.string.ratingFormat, rating, countRating)
-
-
+                priceTextView.text = price.withCurrencyFormat()
+                dateTextView.text = getString(R.string.dateFormat, date.withDateFormat())
+                ratingTextView.text = getString(R.string.ratingFormat, rating.withNumberingFormat(), countRating.withNumberingFormat())
             }
         }
     }
