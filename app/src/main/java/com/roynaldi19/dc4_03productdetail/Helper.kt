@@ -1,4 +1,4 @@
-package com.dicoding.picodiploma.productdetail
+package com.roynaldi19.dc4_03productdetail
 
 import java.text.DateFormat
 import java.text.NumberFormat

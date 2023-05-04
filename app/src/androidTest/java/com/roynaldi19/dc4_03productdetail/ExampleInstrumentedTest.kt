@@ -1,4 +1,4 @@
-package com.dicoding.picodiploma.productdetail
+package com.roynaldi19.dc4_03productdetail
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4

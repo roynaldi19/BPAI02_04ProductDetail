@@ -1,4 +1,4 @@
-package com.dicoding.picodiploma.productdetail
+package com.roynaldi19.dc4_03productdetail
 
 import android.content.Intent
 import android.os.Build
@@ -7,7 +7,7 @@ import android.os.Bundle
 import android.provider.Settings
 import android.view.WindowInsets
 import android.view.WindowManager
-import com.dicoding.picodiploma.productdetail.databinding.ActivityMainBinding
+import com.roynaldi19.dc4_03productdetail.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
